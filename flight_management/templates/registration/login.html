@@ -2,4 +2,6 @@
 
 {% block section1 %}
     <h1>Login</h1>
+    {% csrf_token %}
+    {{ form.as_p }}
 {% endblock %}

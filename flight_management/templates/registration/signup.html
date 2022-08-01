@@ -1,5 +1,14 @@
 {% extends 'base.html' %}
 
 {% block section1 %}
-    <h1>Welcome to Signup</h1>
+    <div class="container d-flex justify-content-center">
+        <h2>Sign up</h2>
+    </div>
+    <div class="form container" id="signup-form">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
 {% endblock %}
