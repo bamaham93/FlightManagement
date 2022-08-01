@@ -144,4 +144,11 @@ workspace.code-workspace
 # Exclude compiled .pyc files.
 *.pyc
 
+# Environment variable file
 .env
+
+# JetBrains IDE config files
+/.idea
+.idea
+.idea/
+\.idea
